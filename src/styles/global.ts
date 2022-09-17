@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
-
-const GlobalStyles = createGlobalStyle`
+// FIX: using any while react 18 + styled components types show error on GlobalStyles
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const GlobalStyles: any = createGlobalStyle`
     * {
         margin: 0;
         padding: 0;
